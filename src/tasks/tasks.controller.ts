@@ -2,7 +2,6 @@ import { Body, Controller, Delete, Get, NotFoundException, Param, ParseIntPipe, 
 import { TasksService } from "./tasks.service";
 import { Task } from "./task.entity";
 import { TaskDto } from "./task.dto";
-
 @Controller('tasks')
 export class TasksController {
     constructor(private readonly tasksService: TasksService) {}
